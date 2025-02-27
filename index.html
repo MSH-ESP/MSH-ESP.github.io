@@ -10,7 +10,7 @@
 #snackbar-container {
   position: fixed;
   bottom: 30px;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -18,7 +18,7 @@
 .snackbar {
   visibility: hidden;
   min-width: 250px;
-  margin-left: 50px;
+  margin-left: -125px;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -31,8 +31,8 @@
 
 .snackbar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 1.25s;
-  animation: fadein 0.5s, fadeout 0.5s 1.25s;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @-webkit-keyframes fadein {
@@ -414,7 +414,7 @@ function popup() {
   setTimeout(function() {
     snackbar.className = "snackbar";
     container.removeChild(snackbar);
-  }, 2000); // 3500ms to match the fade-out timing
+  }, 3500); // 3500ms to match the fade-out timing
 }
 </script>
 
