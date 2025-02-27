@@ -9,19 +9,16 @@
 <style>
 #snackbar-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centering both horizontally and vertically */
+  bottom: 30px; /* Keep it at the bottom of the screen */
+  left: 50%; /* Position at the center horizontally */
+  transform: translateX(-50%); /* Center the snackbar horizontally */
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .snackbar {
   visibility: hidden;
   min-width: 250px;
-  margin-left: -125px;
+  margin-left: -125px; /* Offset to ensure proper centering */
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -57,6 +54,7 @@
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
 </style>
 
 
